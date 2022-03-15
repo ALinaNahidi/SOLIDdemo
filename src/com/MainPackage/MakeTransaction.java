@@ -1,4 +1,4 @@
-package com.anynameasnamespace;
+package com.MainPackage;
 
 public class MakeTransaction {
     public static void makePayment(int amount) {

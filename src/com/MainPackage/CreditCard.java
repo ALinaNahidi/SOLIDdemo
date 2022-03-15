@@ -1,4 +1,4 @@
-package com.anynameasnamespace;
+package com.MainPackage;
 
 public class CreditCard implements BankCard{
     public void doTransaction(int amount) {

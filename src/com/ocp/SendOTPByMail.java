@@ -1,4 +1,4 @@
-package com.SolidPrincipal.ocp;
+package com.ocp;
 
 public class SendOTPByMail implements NotificationService {
     @Override

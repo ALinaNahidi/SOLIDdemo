@@ -1,6 +1,6 @@
-package com.anynameasnamespace;
+package com.MainPackage;
 
-import com.SolidPrincipal.ocp.SendOTPByCall;
+import com.ocp.SendOTPByCall;
 import com.isp.Gpay;
 import com.lsp.BookDeliveryOnline;
 
@@ -15,14 +15,11 @@ public class PurchaseBook {
 //    }
 
 
-    private BankCard bankCard;
-    public PurchaseBook(BankCard bankCard){
+    private final BankCard bankCard;
+
+    public PurchaseBook(BankCard bankCard) {
         this.bankCard = bankCard;
     }
-    public void doPayment(Object order, int amount){
-        bankCard.doTransaction(amount);
-    }
-
 
     public static void main(String[] args) {
 
@@ -38,11 +35,15 @@ public class PurchaseBook {
 //        main.doPayment("some order",2000);
 
 
-
         BankCard bankCard = new DebitCard();
-        PurchaseBook main= new PurchaseBook(bankCard);
-        main.doPayment("some order",2000);
+        PurchaseBook main = new PurchaseBook(bankCard);
+        main.doPayment("some order", 2000);
 
+    }
+
+    public void doPayment(Object order, int amount) {
+        System.out.println(order);
+        bankCard.doTransaction(amount);
     }
 //    public void getDeliveryLocations() {
 //        String title;
@@ -71,7 +72,6 @@ public class PurchaseBook {
 //    }
 //
 //
-
 
 
 }

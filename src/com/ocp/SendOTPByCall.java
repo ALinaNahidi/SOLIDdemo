@@ -1,4 +1,4 @@
-package com.SolidPrincipal.ocp;
+package com.ocp;
 
 public class SendOTPByCall implements NotificationService {
 

@@ -1,4 +1,4 @@
-package com.anynameasnamespace;
+package com.MainPackage;
 
 public class PurchaseInfo {
     public static void getPurchaseInfo(String purchaseType) {
